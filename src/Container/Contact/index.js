@@ -3,18 +3,16 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import ListGroup from 'react-bootstrap/ListGroup';
-import { BsFacebook, BsLinkedin, BsTwitter, BsStackOverflow, BsGoogle, BsGithub, BsYoutube } from "react-icons/bs";
+import { BsLinkedin,  BsGithub } from "react-icons/bs";
+import { SiGmail } from "react-icons/si"
 import './style.css';
 const  ContactContainer = ()=>{
     const myData = [
-        {name:'Facebook', link:'https://www.facebook.com/rohitazadmalik/', text:'Follow to my facebook.'},
-        {name:'Linkedin', link:'https://www.linkedin.com/in/rohitazad/', text:'Follow to my linkedin.'},
-        {name:'Twitter', link:'https://twitter.com/rohitazad', text:'Follow to my twitter.'},
-        {name:'StackOverFlow', link:'https://stackoverflow.com/users/1365428/rohit-azad-malik', text:'Check out to my stackoverflow account.'},
-        {name:'Blog', link:'https://rohitazadmalik.blogspot.com/', text:'Follow to my blog.'},
-        {name:'GitHub', link:'https://github.com/rohitazad', text:'Follow to my github account.'},
-        {name:'YouTube', link:'https://www.youtube.com/c/AzadMalikRohit', text:'Follow to my youtube channel.'},
-        {name:'Email', link:'mailto:learncodingwithbhai@gmail.com',  text:'write to me a mail'}
+        
+        {name:'Linkedin', link:'www.linkedin.com/in/aabhar-gupta-2b0741217', text:'Follow to my linkedin.'},
+       
+        {name:'GitHub', link:'https://github.com/Aabhar23', text:'Follow to my github account.'},
+        {name:'Gmail', link:'aabhargupta2310@gmail.com', text:'Follow to my github account.'}
     ]
     return (
         <div className='contactWrap'>
@@ -28,41 +26,22 @@ const  ContactContainer = ()=>{
             <Row>
                 <Col className='conectIcon'>
                     <ul className='socialIconsList'>
+                       
                         <li>
-                            <a rel="noreferrer" href="https://www.facebook.com/rohitazadmalik/" target="_blank">
-                                <BsFacebook />
-                            </a>
-                        </li>
-                        <li>
-                            <a rel="noreferrer" href="https://www.linkedin.com/in/rohitazad/" target="_blank">
+                            <a rel="noreferrer" href="www.linkedin.com/in/aabhar-gupta-2b0741217" target="_blank">
                                 <BsLinkedin />
                             </a>
                         </li>
                         <li>
-                            <a rel="noreferrer" href="https://twitter.com/rohitazad" target="_blank">
-                                <BsTwitter />
-                            </a>
-                        </li>
-                        <li>
-                            <a rel="noreferrer" href="https://stackoverflow.com/users/1365428/rohit-azad-malik" target="_blank">
-                                <BsStackOverflow />
-                            </a>
-                        </li>
-                        <li>
-                            <a rel="noreferrer" href="https://rohitazadmalik.blogspot.com/" target="_blank">
-                                <BsGoogle />
-                            </a>
-                        </li>
-                        <li>
-                            <a rel="noreferrer" href="https://github.com/rohitazad" target="_blank">
+                            <a rel="noreferrer" href="https://github.com/Aabhar23" target="_blank">
                                 <BsGithub />
                             </a>
                         </li>
                         <li>
-                            <a rel="noreferrer" href="https://www.youtube.com/c/AzadMalikRohit" target="_blank">
-                                <BsYoutube />
+                            <a rel="noreferrer" href="aabhargupta2310@gmail.com" target="_blank">
+                                <SiGmail />
                             </a>
-                        </li> 
+                        </li>
                     </ul>
                 </Col>
             </Row>

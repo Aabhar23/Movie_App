@@ -23,16 +23,19 @@ const  HomeContainer = ()=>{
     useEffect(()=>{
         console.log('Trending Component did mount');
         GetDataTrending();
-        //eslint-disable-next-line
+        
     }, [])
 
     const handleClick = (number)=>{
         setPageno(number);
+        if(number > 500){
+            alert("Invalid page: Pages start at 1 and max at 500. They are expected to be an integer.")
+        }
     }
     useEffect(()=>{
         console.log('Trending Component didupdate mount');
         GetDataTrending();
-        //eslint-disable-next-line
+       
     }, [pageno])
     return (
         <main className='homePage'>

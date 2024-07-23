@@ -119,14 +119,6 @@ const DetailsContainer = ()=>{
                 </Col>
                 <Col className='col-12 col-xl-6'>
                     <div className='frameSec'>
-                        {/* <a rel="noreferrer" target="_blank" href={`https://www.youtube.com/watch?v=${video}`}>
-                            <figure className="youtubeImage">
-                                <span className='imageSec'>
-                                    <img src={videoBgPoster} alt="" title="" />
-                                </span>
-                                <span className='iconYoutube'></span>
-                            </figure>
-                        </a> */}
                         <iframe width="560" height="315" src={`https://www.youtube.com/embed/${video}`} title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                     </div>
                 </Col>

@@ -2,13 +2,17 @@ import React from "react"
 import ReactPaginate from "react-paginate";
 import './style.css';
 const PaginationComponent = (props)=>{
-    const {maxnum, activenum, handleClick} = props
+
+    const { activenum, handleClick} = props
     const forcePageActive = parseInt(activenum) - 1;
     const handlePageClick = (e)=>{
         console.log('hello', e.selected)
         let pageNo = parseInt(e.selected) + 1
         handleClick(pageNo);
+       
         window.scrollTo(0, 0)
+
+       
     }
       
     
@@ -19,7 +23,7 @@ const PaginationComponent = (props)=>{
                     previousLabel={"<"}
                     nextLabel={">"}
                     breakLabel={"..."}
-                    pageCount={maxnum}
+                    pageCount={500}
                     marginPagesDisplayed={2}
                     pageRangeDisplayed={2}
                     onPageChange={handlePageClick}
